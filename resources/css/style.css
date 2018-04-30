@@ -52,6 +52,18 @@ body {
   margin: 1rem 1rem 1rem 2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .header {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .brandlogo span {
+    display: none;
+  }
+}
+
 /* navigation menu */
 
 nav ul {
@@ -66,6 +78,18 @@ li a{
   margin: 1rem 1rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  nav ul {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+}
 /* Main banner */
 
 .main_banner {
@@ -98,27 +122,60 @@ li a{
   line-height: 1.2;
 }
 
+@media only screen and (max-width: 1024px) {
+  .main_banner {
+    height: 22rem;
+  }
+  .headline {
+    top: 5rem;
+    right: 2rem;
+  }
+  .headline h1 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main_banner {
+    height: 17rem;
+  }
+  .headline {
+    top: 9rem;
+    width: 100%;
+  }
+  .headline h1 {
+    font-size: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+  }
+}
+
 /* service information */
 
 .services {
   display: flex;
-  align-items: center;
-  max-height: 8rem;
   margin-top: 3rem;
   justify-content: center;
-  border: 1px solid black;
 }
 
 .service {
+  display: flex;
   height: 8rem;
-  border: 1px solid black;
+  flex-flow: column;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-flow: column;
+  max-width: 5rem;
 }
 
 .paper {
   width: 3.5rem;
   margin: 0 3rem;
   justify-content: flex-start;
-  flex-flow: column wrap;
 }
 
 .ruler,
@@ -128,11 +185,23 @@ li a{
     justify-content: flex-start;
   }
 
-.text {
-  flex-flow: column;
+@media only screen and (max-width: 470px) {
+  .services {
+    flex-direction: column;
+    margin-top: 3.77rem;
+  }
+
+  .service img {
+    margin-top: 1.54rem;
+  }
+  .text {
+    font-size: 0.77rem;
+    font-family: Helvetica;
+  }
 }
 
 /* info blocks */
+
 
 .information {
   display: flex;
@@ -144,6 +213,7 @@ li a{
   flex-direction: column;
   width: 35%;
   padding: 2.5%;
+  align-items: flex-start;
 }
 
 .title {
@@ -155,6 +225,24 @@ li a{
 
 .info p {
   margin-top: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .information {
+    flex-direction: column;
+    margin-top: 3.77rem;
+  }
+  .title {
+    width: 100%;
+  }
+  .info p {
+    font-size: 0.77rem;
+    font-family: Helvetica;
+    margin-top: 1rem;
+  }
+  .title .schedule {
+    margin-top: 4rem;
+  }
 }
 
 /* Footer */
@@ -174,4 +262,14 @@ footer .container {
   display: flex;
   align-items: center;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer span {
+    display: none;
+  }
+  footer img {
+    align-items: center;
+    justify-content: center;
+  }
 }
