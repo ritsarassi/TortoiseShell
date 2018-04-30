@@ -19,20 +19,17 @@ body {
 /* Header style */
 
 header {
-  display: flex;
   background-color: cadetblue;
   height: 3rem;
   margin-top: 1rem;
   color: white;
-  align-items: center;
-  left: 14rem;
   position: fixed;
   z-index: 1;
 }
 
+
 header .container {
   display: flex;
-  width: 960px;
   padding: 1rem 2rem;
   flex-direction: row;
   justify-content: space-between;
@@ -69,14 +66,13 @@ li a {
 }
 
 .main_banner .container {
-
+  display: flex;
+  justify-content: flex-end;
 }
 
 .headline {
   position: relative;
   top: 10rem;
-  height: 5rem;
-  padding: 1.5rem 5rem;
   background-color: white;
 }
 
@@ -94,7 +90,7 @@ li a {
 
 .services {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-top: 3rem;
 }
 
@@ -102,15 +98,25 @@ li a {
   display: flex;
   height: 8rem;
   flex-direction: column;
+  border: 1px solid black;
+}
+
+.service-image {
+
+}
+
+.paper {
+  width: 3.5rem;
   margin: 0 3rem;
 }
 
+.ruler,
+  .truck {
+    width: 5rem;
+    margin: 0 3rem;
+  }
 
-
-.paper {
-  max-width: 3.5rem;
-}
-
-.ruler {
-  max-width: 5rem;
-}
+  .service .text {
+    display: flex;
+    flex-flow: column wrap;
+  }
