@@ -1,4 +1,9 @@
-
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 /* Universal styles */
 
@@ -18,41 +23,47 @@ body {
 
 /* Header style */
 
-header {
+.header {
+  display: flex;
   background-color: cadetblue;
-  height: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
   margin-top: 1rem;
+  height: 3rem;
   color: white;
   position: fixed;
   z-index: 1;
 }
 
-
-header .container {
+.header .container {
   display: flex;
-  padding: 1rem 2rem;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .brandlogo {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .brandlogo img {
   height: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 1rem;
+  margin: 1rem 1rem 1rem 2rem;
 }
+
+/* navigation menu */
 
 nav ul {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  margin: 1rem 2rem;
 }
 
-li a {
+li a{
   color: white;
   text-decoration: none;
-  padding: 1rem 1rem;
+  margin: 1rem 1rem;
 }
 
 /* Main banner */
@@ -73,6 +84,7 @@ li a {
 .headline {
   position: relative;
   top: 10rem;
+  left: 2rem;
   background-color: white;
 }
 
@@ -90,33 +102,76 @@ li a {
 
 .services {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  max-height: 8rem;
   margin-top: 3rem;
-}
-
-.service {
-  display: flex;
-  height: 8rem;
-  flex-direction: column;
+  justify-content: center;
   border: 1px solid black;
 }
 
-.service-image {
-
+.service {
+  height: 8rem;
+  border: 1px solid black;
 }
 
 .paper {
   width: 3.5rem;
   margin: 0 3rem;
+  justify-content: flex-start;
+  flex-flow: column wrap;
 }
 
 .ruler,
   .truck {
     width: 5rem;
     margin: 0 3rem;
+    justify-content: flex-start;
   }
 
-  .service .text {
-    display: flex;
-    flex-flow: column wrap;
-  }
+.text {
+  flex-flow: column;
+}
+
+/* info blocks */
+
+.information {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.info {
+  flex-direction: column;
+  width: 35%;
+  padding: 2.5%;
+}
+
+.title {
+  width: 10rem;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  background-color: cadetblue;
+}
+
+.info p {
+  margin-top: 1rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: azure;
+  height: 9.5rem;
+  margin-top: 5rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  padding: 4rem 1rem 4rem 4rem;
+}
