@@ -58,7 +58,7 @@ body {
     max-width: 100%;
   }
 }
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 560px) {
   .brandlogo span {
     display: none;
   }
@@ -139,7 +139,7 @@ li a{
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 560px) {
   .main_banner {
     height: 17rem;
     width: 100%;
@@ -194,7 +194,7 @@ li a{
     width: 5rem;
   }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 560px) {
   .services {
     flex-direction: column;
     justify-content: flex-start;
@@ -238,7 +238,7 @@ li a{
   margin-top: 1rem;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 560px) {
   .info {
     width: 100%;
   }
@@ -277,7 +277,7 @@ footer .container {
   padding: 4rem 1rem 4rem 4rem;
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 560px) {
   footer span {
     display: none;
   }
