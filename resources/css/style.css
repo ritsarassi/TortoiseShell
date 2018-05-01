@@ -125,6 +125,8 @@ li a{
 @media only screen and (max-width: 1024px) {
   .main_banner {
     height: 22rem;
+    background-position: center;
+    background-size: cover;
   }
   .headline {
     top: 5rem;
