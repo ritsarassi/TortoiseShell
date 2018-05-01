@@ -139,6 +139,8 @@ li a{
 @media only screen and (max-width: 470px) {
   .main_banner {
     height: 17rem;
+    background-position: center;
+    background-size: cover;
   }
   .headline {
     top: 9rem;
