@@ -149,7 +149,7 @@ li a{
 @media only screen and (max-width: 470px) {
   .main_banner {
     height: 17rem;
-    background-position: 100%;
+    background-position: 20%;
   }
 
   .headline {
@@ -258,7 +258,6 @@ li a{
   }
   .info p {
     width: 100%;
-    justify-content: center;
     font-size: 0.77rem;
     padding: 1rem;
   }
