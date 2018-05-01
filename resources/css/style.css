@@ -153,13 +153,13 @@ li a{
   }
 
   .headline {
-    margin: 9rem;
-    width: 100%;
+    margin-top: 9rem;
     text-align: center;
-    padding: 0 1rem;
+    max-width: 100%;
   }
 
   .headline h1 {
+    margin: 1rem 0;
     font-size: 1rem;
   }
 }
@@ -202,7 +202,7 @@ li a{
 @media only screen and (max-width: 470px) {
   .services {
     flex-direction: column;
-    margin-top: 3rem;
+    margin-top: 3.77rem;
     justify-content: flex-start;
     align-items: center;
   }
@@ -244,15 +244,12 @@ li a{
 }
 
 @media only screen and (max-width: 470px) {
-  .information .container {
+  .information {
     flex-direction: column;
     margin-top: 3.77rem;
-    justify-content: center;
-    align-content: center;
   }
   .title {
     width: 100%;
-    max-width: none;
     margin-right: 0;
     text-align: center;
   }
