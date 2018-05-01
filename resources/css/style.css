@@ -78,7 +78,7 @@ li a{
   margin: 1rem 1rem;
 }
 
-.mobile-nav {
+.mobile-nav li {
   display: none;
 }
 
@@ -189,6 +189,7 @@ li a{
   .services {
     flex-direction: column;
     margin-top: 3.77rem;
+    justify-content: center;
   }
 
   .service img {
