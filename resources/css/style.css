@@ -23,7 +23,7 @@ body {
 
 @media only screen and (max-width: 560px) {
   .container {
-    max-width: 100%;
+    width: 100%;
   }
 }
 
@@ -152,8 +152,10 @@ li a{
   }
 
   .headline {
+    display: flex;
     width: 100%;
-    margin-top: 9rem;
+    height: auto;
+    margin: auto;
     padding: 0;
     text-align: center;
   }
@@ -243,10 +245,11 @@ li a{
 }
 
 @media only screen and (max-width: 560px) {
+
   .information {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-content: center;
     margin-top: 3rem;
   }
 
@@ -256,11 +259,12 @@ li a{
     font-size: .77rem;
   }
 
-  .info {
+  .container .info {
+    display: flex;
     width: 100%;
   }
 
-  .info .title {
+  .title  {
     width: 100%;
     max-width: none;
     margin-right: 0;
@@ -294,7 +298,7 @@ footer .container {
 }
 
 @media only screen and (max-width: 560px) {
-  footer {
+  footer .container {
     justify-content: center;
   }
 
