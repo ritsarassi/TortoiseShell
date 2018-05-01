@@ -62,7 +62,7 @@ body {
 @media only screen and (max-width: 1024px) {
   .header {
     margin-top: 0;
-    width: 100%;
+    max-width: 100%;
   }
 }
 @media only screen and (max-width: 470px) {
@@ -93,7 +93,7 @@ li a{
   nav ul {
     display: none;
   }
-  .mobile-nav li {
+  .mobile-nav li .container {
     display: block;
   }
 }
@@ -132,35 +132,35 @@ li a{
 @media only screen and (max-width: 1024px) {
   .main_banner {
     height: 22rem;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+    max-width: 100%;
   }
+
   .headline {
-    top: 5rem;
-    right: 2rem;
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
   }
+
   .headline h1 {
     font-size: 1.33rem;
-    padding: 0.75rem 4rem;
   }
 }
 
 @media only screen and (max-width: 470px) {
   .main_banner {
     height: 17rem;
-    background-position: center;
-    background-size: cover;
+    background-position: 20%;
   }
+
   .headline {
-    top: 9rem;
-    width: 100%;
-  }
-  .headline h1 {
-    font-size: 1rem;
-    margin: 1rem 0;
+    margin: 9rem auto 0 auto;
     width: 100%;
     text-align: center;
+    padding: 0 1rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
   }
 }
 
@@ -202,8 +202,8 @@ li a{
 @media only screen and (max-width: 470px) {
   .services {
     flex-direction: column;
-    margin-top: 3.77rem;
-    justify-content: center;
+    margin-top: 3rem;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -211,8 +211,8 @@ li a{
     margin-top: 1.54rem;
   }
   .text {
+    margin: 0.77rem;
     font-size: 0.77rem;
-    font-family: Helvetica;
   }
 }
 
