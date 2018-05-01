@@ -142,20 +142,18 @@ li a{
 @media only screen and (max-width: 560px) {
   .main_banner {
     height: 17rem;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 20%;
   }
 
   .headline {
-    top: 9rem;
+    width: 100%;
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
   }
 
   .headline h1 {
     font-size: 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
   }
 }
 
@@ -199,9 +197,9 @@ li a{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 3.77rem;
   }
-}
+
 
   .service {
     height: auto;
@@ -239,6 +237,19 @@ li a{
 }
 
 @media only screen and (max-width: 560px) {
+  .information {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  .service {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
+  }
+
   .info {
     width: 100%;
   }
@@ -255,7 +266,6 @@ li a{
     font-size: .77rem;
   }
 }
-
 
 /* Footer */
 
@@ -278,10 +288,11 @@ footer .container {
 }
 
 @media only screen and (max-width: 560px) {
-  footer span {
-    display: none;
-  }
   footer {
     justify-content: center;
+  }
+
+  footer span {
+    display: none;
   }
 }
