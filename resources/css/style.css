@@ -205,6 +205,7 @@ li a{
     height: auto;
     margin: .77rem;
     font-size: .77rem;
+    justify-content: center;
   }
 }
 
