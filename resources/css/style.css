@@ -153,7 +153,8 @@ li a{
 
   .headline {
     width: 100%;
-    margin: 9rem auto 0 auto;
+    margin-top: 9rem;
+    padding: 0;
     text-align: center;
   }
 
@@ -208,7 +209,7 @@ li a{
 
   .service {
     height: auto;
-    margin: .77rem;
+    margin: 3.77rem .77rem .77rem .77rem;
     font-size: .77rem;
     align-items: center;
   }
