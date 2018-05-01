@@ -132,7 +132,7 @@ li a{
 @media only screen and (max-width: 1024px) {
   .main_banner {
     height: 22rem;
-    max-width: 100%;
+    width: 100%;
   }
 
   .headline {
@@ -149,7 +149,7 @@ li a{
 @media only screen and (max-width: 470px) {
   .main_banner {
     height: 17rem;
-    background-position: 20%;
+    background-position: 100%;
   }
 
   .headline {
@@ -257,6 +257,8 @@ li a{
     text-align: center;
   }
   .info p {
+    width: 100%;
+    justify-content: center;
     font-size: 0.77rem;
     padding: 1rem;
   }
@@ -291,6 +293,7 @@ footer .container {
     display: none;
   }
   footer {
+    width: 100%;
     justify-content: center;
   }
 }
