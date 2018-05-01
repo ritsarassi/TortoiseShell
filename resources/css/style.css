@@ -146,14 +146,13 @@ li a{
   }
 
   .headline {
-    margin-top: 9rem;
-    text-align: center;
     width: 100%;
     padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    text-align: center;
   }
 
   .headline h1 {
-    margin: 1rem 0;
     font-size: 1rem;
   }
 }
@@ -196,17 +195,16 @@ li a{
 @media only screen and (max-width: 470px) {
   .services {
     flex-direction: column;
-    margin-top: 3.77rem;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 3rem;
   }
+}
 
-  .service img {
-    margin-top: 1.54rem;
-  }
-  .text {
-    margin: 0.77rem;
-    font-size: 0.77rem;
+  .service {
+    height: auto;
+    margin: .77rem;
+    font-size: .77rem;
   }
 }
 
@@ -238,22 +236,20 @@ li a{
 }
 
 @media only screen and (max-width: 470px) {
-  .information {
+  .info {
     width: 100%;
-    margin-top: 3.77rem;
   }
-  .title {
+
+  .info .title {
     width: 100%;
     max-width: none;
     margin-right: 0;
     text-align: center;
   }
+
   .info p {
-    font-size: 0.77rem;
     padding: 1rem;
-  }
-  .schedule {
-    margin-top: 4rem;
+    font-size: .77rem;
   }
 }
 
@@ -283,7 +279,6 @@ footer .container {
     display: none;
   }
   footer {
-    width: 100%;
     justify-content: center;
   }
 }
