@@ -21,6 +21,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 470px) {
+  .container {
+    justify-content: center;
+  }
+}
+
 /* Header style */
 
 .header {
@@ -86,7 +92,7 @@ li a{
   nav ul {
     display: none;
   }
-  .mobile-nav {
+  .mobile-nav a {
     display: block;
   }
 }
@@ -125,6 +131,7 @@ li a{
 @media only screen and (max-width: 1024px) {
   .main_banner {
     height: 22rem;
+    width: 100%;
     background-position: center;
     background-size: cover;
   }
