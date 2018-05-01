@@ -23,6 +23,7 @@ body {
 
 @media only screen and (max-width: 470px) {
   .container {
+    width: 100%;
     justify-content: center;
   }
 }
@@ -203,6 +204,7 @@ li a{
     flex-direction: column;
     margin-top: 3.77rem;
     justify-content: center;
+    align-items: center;
   }
 
   .service img {
@@ -255,7 +257,7 @@ li a{
     font-family: Helvetica;
     margin-top: 1rem;
   }
-  .title .schedule {
+  .schedule {
     margin-top: 4rem;
   }
 }
