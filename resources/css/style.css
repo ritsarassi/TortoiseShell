@@ -21,6 +21,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 560px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
 /* Header style */
 
 .header {
@@ -147,7 +153,6 @@ li a{
 
   .headline {
     width: 100%;
-    padding: 0 1rem;
     margin: 9rem auto 0 auto;
     text-align: center;
   }
@@ -193,7 +198,7 @@ li a{
   }
 
 @media only screen and (max-width: 560px) {
-  .services {
+    .services {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
