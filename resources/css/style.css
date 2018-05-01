@@ -147,6 +147,7 @@ li a{
   .headline h1 {
     font-size: 1rem;
     margin: 1rem 0;
+    width: 100%;
     text-align: center;
   }
 }
@@ -232,6 +233,7 @@ li a{
   .information {
     flex-direction: column;
     margin-top: 3.77rem;
+    justify-content: center;
   }
   .title {
     width: 100%;
@@ -257,6 +259,7 @@ footer {
 footer img {
   height: 1.5rem;
   margin-right: 1rem;
+  justify-content: center;
 }
 
 footer .container {
