@@ -21,13 +21,6 @@ body {
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 470px) {
-  .container {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
 /* Header style */
 
 .header {
@@ -155,7 +148,8 @@ li a{
   .headline {
     margin-top: 9rem;
     text-align: center;
-    max-width: 100%;
+    width: 100%;
+    padding: 0 1rem;
   }
 
   .headline h1 {
@@ -245,11 +239,12 @@ li a{
 
 @media only screen and (max-width: 470px) {
   .information {
-    flex-direction: column;
+    width: 100%;
     margin-top: 3.77rem;
   }
   .title {
     width: 100%;
+    max-width: none;
     margin-right: 0;
     text-align: center;
   }
